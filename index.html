@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ministry of Jal Shakti — Executive Portfolio Dashboard</title>
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="js/leaflet/leaflet.css">
+<script src="js/chart.umd.min.js"></script>
+<script src="js/leaflet/leaflet.js"></script>
+</head>
+<body>
+
+<header class="appbar">
+  <div class="appbar-top">
+    <img class="appbar-emblem" src="assets/emblem-placeholder.svg" alt="Emblem placeholder" title="Placeholder emblem — replace assets/emblem-placeholder.svg with the official, unwatermarked State Emblem artwork">
+    <div class="appbar-titles">
+      <div class="t1">Ministry of Jal Shakti · Government of India</div>
+      <div class="t2">Executive Portfolio Dashboard</div>
+      <div class="t3">Decision Support View — PSU-Executed Project Portfolio (Dept. of Water Resources, River Development &amp; Ganga Rejuvenation)</div>
+    </div>
+    <div class="appbar-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input id="global-search" type="text" placeholder="Search projects, verticals, states, clients…" autocomplete="off">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+    <div class="appbar-meta">
+      <div class="meta-item">
+        <div class="meta-label">Total Projects</div>
+        <div class="meta-value" id="app-total-projects">—</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-label">Data As Of</div>
+        <div class="meta-value" id="app-last-updated">—</div>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" title="Switch between light and dark theme">
+        <svg id="theme-icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg id="theme-icon-sun" class="hidden" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <button class="nav-btn active" data-view="overview">Overview</button>
+      <button class="nav-btn" data-view="financial">Financial</button>
+      <button class="nav-btn" data-view="geography">Geography</button>
+      <button class="nav-btn" data-view="timeline">Timeline</button>
+      <button class="nav-btn" data-view="departments">Departments</button>
+      <button class="nav-btn" data-view="programmes">Programmes</button>
+      <button class="nav-btn" data-view="projects">Projects</button>
+      <button class="nav-btn" data-view="actions">Actions <span class="nav-badge" id="nav-badge-actions">0</span></button>
+      <button class="nav-btn" data-view="issues">Issues <span class="nav-badge" id="nav-badge-issues">0</span></button>
+      <button class="nav-btn" data-view="dataquality">Data Quality</button>
+    </div>
+  </nav>
+</header>
+
+<div id="main-scroll-anchor"></div>
+<main class="main-wrap">
+
+  <div class="filterbar" id="global-filterbar">
+    <span class="fb-label">Filters</span>
+    <select id="f-vertical"></select>
+    <select id="f-component"></select>
+    <select id="f-location"></select>
+    <select id="f-region"></select>
+    <select id="f-status"></select>
+    <select id="f-priority"></select>
+    <select id="f-health"></select>
+    <button class="btn btn-reset" id="btn-reset-filters">Reset Filters</button>
+  </div>
+  <div id="active-chips" style="margin:-8px 0 14px; display:flex; gap:6px; flex-wrap:wrap;"></div>
+
+  <section id="view-overview" class="view active"></section>
+  <section id="view-financial" class="view"></section>
+  <section id="view-geography" class="view"></section>
+  <section id="view-timeline" class="view"></section>
+  <section id="view-departments" class="view"></section>
+  <section id="view-programmes" class="view"></section>
+  <section id="view-projects" class="view"></section>
+  <section id="view-actions" class="view"></section>
+  <section id="view-issues" class="view"></section>
+  <section id="view-dataquality" class="view"></section>
+
+</main>
+
+<div class="overlay" id="overlay">
+  <div class="drawer" id="drawer"></div>
+</div>
+
+<script src="data/dataset.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/state.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/chart3d.js"></script>
+<script src="js/datatable.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/geomap.js"></script>
+<script src="js/actions.js"></script>
+<script src="js/drawer.js"></script>
+<script src="js/views.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
