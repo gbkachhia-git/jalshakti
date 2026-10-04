@@ -1,0 +1,198 @@
+{
+  "generated_on": "2026-10-03",
+  "dashboard_built_on": "2026-10-03",
+  "data_scope_note": "The supplied files are WAPCOS Limited's internal Project Management System (Core PMS) portfolio export, not a Ministry-of-Jal-Shakti-wide dataset. WAPCOS is a Mini-Ratna PSU under the Department of Water Resources, River Development & Ganga Rejuvenation, Ministry of Jal Shakti, and executes consultancy/EPC/PMC/DPR assignments across Water Resources, Waste Water, Power, Infrastructure, Environment and Construction & Commercial verticals for central ministries, state governments, PSUs and institutions across India and a few overseas locations. No data for NMCG, CWC, CGWB, NWM, NIH or Jal Jeevan Mission programme-level MIS was present in the supplied folder, so this dashboard represents WAPCOS's own project portfolio only, framed as a Ministry-level oversight view of one of its key implementing PSUs.",
+  "sources": [
+    {
+      "file": "ProjectPortfolio_all_20261003_061248.xlsx",
+      "sheet": "wapcos_all_projects",
+      "rows": 1148,
+      "purpose": "Primary project register: status, health, schedule & financial KPIs"
+    },
+    {
+      "file": "ProjectPortfolio_all_20261003_061248.xlsx",
+      "sheet": "Projects (2)",
+      "rows": 1155,
+      "purpose": "State/location, contract type & service-component enrichment"
+    },
+    {
+      "file": "ProjectPortfolio_all_20261003_061248.xlsx",
+      "sheet": "Active Projects",
+      "rows": 1155,
+      "purpose": "Client names, milestones, invoicing & debtor realization detail"
+    },
+    {
+      "file": "ProjectPortfolio_all_20261003_061248.xlsx",
+      "sheet": "Inactive Projects",
+      "rows": 746,
+      "purpose": "Legacy/closed-out project register (not part of the live 1,148-project portfolio)"
+    },
+    {
+      "file": "ProjectPortfolio_all_20261003_061248.xlsx",
+      "sheet": "forensic_bid_analysis",
+      "rows": 122,
+      "purpose": "ILLUSTRATIVE bid-comparison analysis (source-flagged is_demo_data=TRUE)"
+    },
+    {
+      "file": "ProjectPortfolio_all_20261003_061248.xlsx",
+      "sheet": "forensic_dpr_rfp_varience",
+      "rows": 45,
+      "purpose": "ILLUSTRATIVE DPR-estimate vs RFP-award variance (source-flagged is_demo_data=TRUE)"
+    },
+    {
+      "file": "ProjectPortfolio_all_20261003_061248.xlsx",
+      "sheet": "forensic_bom_variance",
+      "rows": 135,
+      "purpose": "ILLUSTRATIVE bill-of-material quantity/rate variance (source-flagged is_demo_data=TRUE)"
+    },
+    {
+      "file": "ProjectPortfolio_all_20261003_061248.xlsx",
+      "sheet": "forensic_budget_component",
+      "rows": 720,
+      "purpose": "ILLUSTRATIVE budget vs actual by cost component (source-flagged is_demo_data=TRUE)"
+    },
+    {
+      "file": "ProjectPortfolio_all_20261003_061248.xlsx",
+      "sheet": "forensic_ledger",
+      "rows": 229,
+      "purpose": "ILLUSTRATIVE debtor/creditor ageing ledger (source-flagged is_demo_data=TRUE)"
+    },
+    {
+      "file": "project-list-report.xlsx",
+      "sheet": "17 component sheets",
+      "rows": 1042,
+      "purpose": "Cross-check: project count by service component (close match, different snapshot time)"
+    },
+    {
+      "file": "WAPCOS_FullPortfolio_Report_20261003_065819.xlsx",
+      "sheet": "20 year sheets",
+      "rows": 1149,
+      "purpose": "Cross-check: project count by year of record creation"
+    },
+    {
+      "file": "Project Information.xlsx",
+      "sheet": "Sheet2",
+      "rows": 14,
+      "purpose": "Small sample export, structurally consistent with the above - not separately used"
+    }
+  ],
+  "totals": {
+    "total_projects": 1148,
+    "total_legacy_projects": 746,
+    "vertical_counts": {
+      "Construction & Commercial Department": 520,
+      "Water Resources & Water Supply": 216,
+      "Infrastructure": 161,
+      "Power": 110,
+      "Third Party Inspection": 80,
+      "Waste Water Management": 42,
+      "Environment": 18,
+      "WAPCOS": 1
+    },
+    "location_counts": {
+      "Kerala": 149,
+      "Odisha": 115,
+      "Gujarat": 95,
+      "Himachal Pradesh": 84,
+      "Maharashtra": 74,
+      "Delhi": 59,
+      "Haryana": 56,
+      "Uttar Pradesh": 45,
+      "Jharkhand": 42,
+      "Tamil Nadu": 39,
+      "Chhattisgarh": 36,
+      "Karnataka": 30,
+      "Rajasthan": 26,
+      "Madhya Pradesh": 26,
+      "Ladakh": 25,
+      "Punjab": 25,
+      "Uttarakhand": 25,
+      "West Bengal": 21,
+      "Bihar": 17,
+      "Assam": 16,
+      "Andhra Pradesh": 13,
+      "Goa": 9,
+      "Not recorded": 8,
+      "Jammu and Kashmir": 7,
+      "Tripura": 6,
+      "Fiji": 6,
+      "Telangana": 6,
+      "Manipur": 6,
+      "Kathmandu": 5,
+      "Meghalaya": 5,
+      "Unguja": 4,
+      "Togo": 4,
+      "Rwanda": 3,
+      "Andaman and Nicobar Islands": 3,
+      "Nepal": 3,
+      "Chandigarh": 3,
+      "Tanzania": 3,
+      "Nagaland": 3,
+      "Mozambique": 3,
+      "Mongolia": 3,
+      "Ghana": 2,
+      "Uganda": 2,
+      "Dushanbe": 2,
+      "Angola": 2,
+      "Puducherry": 2,
+      "Afghanistan": 1,
+      "Pacific Harbour": 1,
+      "Cambodia": 1,
+      "Botswana": 1,
+      "Dodoma": 1,
+      "Uzbekistan": 1,
+      "Ethopia": 1,
+      "Mizoram": 1,
+      "India": 1,
+      "Lome": 1,
+      "Beira": 1,
+      "Odramakachu": 1,
+      "Democratic Republic of the Congo": 1,
+      "Nimba County": 1,
+      "Kabul": 1,
+      "Bogura": 1,
+      "Sonauli": 1,
+      "Newton And Lungi": 1,
+      "Liberia": 1,
+      "Nigde": 1,
+      "Lesotho": 1,
+      "Ethiopia": 1,
+      "Vulcan International": 1,
+      "Timor-Leste": 1,
+      "Arunachal Pradesh": 1,
+      "Turkey": 1,
+      "Gaoui": 1,
+      "Kenya": 1,
+      "Chad": 1,
+      "The Gambia": 1
+    },
+    "status_counts": {
+      "In progress": 529,
+      "Not started / Stuck": 473,
+      "Completed": 146
+    },
+    "health_counts": {
+      "Delayed": 639,
+      "On Time": 455,
+      "Ahead of Schedule": 54
+    },
+    "priority_counts": {
+      "Normal": 411,
+      "Critical": 304,
+      "Medium": 198,
+      "Completed": 146,
+      "High": 89
+    }
+  },
+  "kpi_definitions": {
+    "On Track": "health = 'On Time' or 'Ahead of Schedule' (source PMS schedule-health field).",
+    "Delayed": "health = 'Delayed' (source PMS schedule-health field, derived from planned vs elapsed timeline).",
+    "Critical Priority": "delay_band = '181+ days' OR days_late >= 180.",
+    "High Priority": "delay_band = '91-180 days' OR 90 <= days_late < 180, OR (health='Delayed' and project not started while elapsed time already exceeds planned duration by 100%+).",
+    "Medium Priority": "delay_band in {'31-90 days','1-30 days'} OR 0 < days_late < 90, OR health='Delayed' with no further banding available.",
+    "Financial Utilization %": "actual_cost / award_value * 100, shown only where award_value > 0.",
+    "Outstanding Value": "planned_billing_value - realized_value, as computed in the source PMS export (outstanding_value field).",
+    "Stalled": "is_stalled = TRUE in source, i.e. project_status = 'Not started / Stuck'.",
+    "Attention Required list": "All projects with priority in {Critical, High} and status != Completed."
+  }
+}
